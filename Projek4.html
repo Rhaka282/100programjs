@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="projek4.css">
+</head>
+<body>
+  <div class="countdown-container">
+    <h1>Countdown Timer</h1>
+    
+    <div class="input-section">
+      <label for="target-date">Target Tanggal:</label>
+      <input type="datetime-local" id="target-date">
+      <button id="start-btn">Mulai Countdown</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+    
+    <div class="countdown-display">
+      <div class="time-block">
+        <span id="days">00</span>
+        <span class="time-label">Hari</span>
+      </div>
+      <div class="time-block">
+        <span id="hours">00</span>
+        <span class="time-label">Jam</span>
+      </div>
+      <div class="time-block">
+        <span id="minutes">00</span>
+        <span class="time-label">Menit</span>
+      </div>
+      <div class="time-block">
+        <span id="seconds">00</span>
+        <span class="time-label">Detik</span>
+      </div>
+    </div>
+    
+    <div id="message"></div>
+  </div>
+  
+  <script src="Projek4.js"></script>
+</body>
+</html>

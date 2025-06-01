@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="projek5.css">
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <div class="timer-container">
+        <span>Waktu tersisa: </span>
+        <span id="time">00:00</span>
+      </div>
+      <div class="score-container">
+        <span>Skor: </span>
+        <span id="score">0</span>
+      </div>
+      
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer A</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer B</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer C</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer D</label>
+        </li>
+      </ul>
+    </div>
+    
+    <button id="submit">Submit</button>
+  </div>
+
+  <div class="result-container" id="result" style="display: none;">
+    <h2>Hasil Quiz</h2>
+    <p>Skor akhir Anda: <span id="final-score">0</span></p>
+    <p>Jawaban benar: <span id="correct">0</span> dari <span id="total">0</span> soal</p>
+    <button id="reload">Main Lagi</button>
+  </div>
+
+  <script src="projek5.js"></script>
+</body>
+</html>
